@@ -7,9 +7,11 @@
         <div class='content'>
             <pre id='output'></pre>
             <script>
-                var socket = io();
+                var socket = io(),
+                    output = document.getElementById('output');
                 socket.on('data', function(data){
-                    document.getElementById('output').appendChild(document.createTextNode(data));
+                    output.appendChild(document.createTextNode(data));
+                    output.scrollTop = output.scrollHeight;
                 });
             </script>
         </div>
