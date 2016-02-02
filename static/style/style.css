@@ -1,0 +1,86 @@
+h3 {
+    font-size: 2em;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(255, 255, 200);
+    color: rgb(55, 55, 0);
+}
+
+.header {
+    margin: 0 0 10px 0;
+    padding: 15px 3px;
+    background: rgb(245,245,190);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 9px;
+    background: rgb(245,245,190);
+    padding: 6px;
+}
+
+span.field {
+    display: block;
+}
+
+form#login {
+    padding-left: 10px;
+}
+
+nav.menu {
+    margin-top: 10px;
+    width: 100%;
+}
+
+li.button {
+    display: inline-block;
+    padding: 4px;
+    margin: 0 5px;
+    background: rgb(235, 235, 180);
+    color: rgb(135, 135, 80);
+    border: 1px dashed rgb(135, 135, 80);
+}
+
+li.button:hover {
+    background: rgb(135, 135, 80);
+    color: rgb(235, 235, 180);
+    border: 1px dashed rgb(235, 235, 180);
+}
+
+li.button.active {
+    background: rgb(135, 135, 80);
+    color: rgb(235, 235, 180);
+    border: 1px solid rgb(235, 235, 180);
+}
+
+a.logout {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 10px;
+    color: rgb(135, 135, 80);
+    text-decoration: none;
+}
+
+a.logout:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 5px;
+}
+
+pre#output {
+    width: 99%;
+    font-family: monospace;
+    background: rgb(20,20,20);
+    color: rgb(20,150,20);
+    padding: 0.5%;
+    height: 80%;
+    word-wrap: break-word;
+    overflow: auto;
+}

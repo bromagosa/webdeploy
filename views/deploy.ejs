@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <% include components/head %>
+    </head>
+    <body>
+        <% include components/header %>
+        <div class='content'>
+            <pre id='output'></pre>
+            <script>
+                var socket = io();
+                socket.on('data', function(data){
+                    document.getElementById('output').appendChild(document.createTextNode(data));
+                });
+            </script>
+        </div>
+        <% include components/footer %>
+    </body>
+</html>

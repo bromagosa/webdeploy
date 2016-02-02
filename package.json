@@ -1,0 +1,21 @@
+{
+  "name": "webdeploy",
+  "version": "0.1.0",
+  "description": "A dead simple web deploy app",
+  "author": "Bernat Romagosa <bromagosa@e-citilab.eu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bromagosa/webdeploy"
+  },
+  "bugs": {
+    "url": "https://github.com/bromagosa/webdeploy/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "crypto": "0.0.3",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "socket.io": "^1.4.5"
+  },
+  "license": "GPLv3"
+}

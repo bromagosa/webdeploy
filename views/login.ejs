@@ -1,0 +1,22 @@
+<html>
+    <head> 
+        <% include components/head %>
+    </head>
+    <body>
+        <% include components/header %>
+        <form id="login" method="POST" action="/login">
+            <span class="field username-field">
+                <span class="username-label">Username:</span>
+                <input type="text" name="username"></input>
+            </span>
+            <span class="field password-field">
+                <span class="password-label">Password:</span>
+                <input type="password" name="password"></input>
+            </span>
+            <span class="field button-field">
+                <input type="submit" value="Login"></input>
+            </span>
+        </form>
+        <% include components/footer %>
+    </body>
+</html>

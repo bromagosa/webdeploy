@@ -1,0 +1,15 @@
+<% if (typeof user != 'undefined') { %>
+    <nav class="menu">
+        <ul>
+            <a href="/snap4arduino"><li class="button snap4arduino">Snap4Arduino</li></a>
+            <a href="/whitecat"><li class="button whitecat">WhiteCat</li></a>
+        </ul>
+        <script>
+            var className = window.location.pathname.substring(1);
+            if (className) {
+                document.getElementsByClassName('button ' + className)[0].className = className + ' button active';
+            }
+        </script>
+    </nav>
+    <a class="logout" href="/logout">Log Out</a> 
+<% } %>
